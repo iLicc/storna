@@ -7,9 +7,9 @@
 
     <div class="pasek"><div class="txt1"><h1>O Adamie</h1></div></div>
    
-    <div class="podstrona1"><a href="html.html">Do strony głównej</a></div>
+    <button class="przycisk1"><a href="html.html">Strona Głowna</a></button>
 
-    <div class="podstrona2"><a href="strona.html">Historia Kopic</a></div>
+    <button class="przycisk2"><a href="strona.html">Historia Kopic</a></button>
 
     <style>
 
@@ -18,7 +18,8 @@
             padding-bottom: 1px;
             padding-left: 50px;
             padding-right: 50px;
-           background-color: grey;
+            background-color: grey;
+            border-radius: 10px;
                 }
     
             .txt1 {
@@ -35,6 +36,41 @@
                     text-align: right;
                     font-size: 21px;
                     }
+
+
+                    .przycisk1 {
+                        margin-left: 245px;
+                         margin-top: 5px;
+                        width: 125px;
+                         height: 30px;
+                        background-color: rgb(179, 179, 179);
+                        border: 2px solid firebrick;
+                        border-radius: 10px; /*Zaokrągla*/
+                        font-weight: bold; /*Pogrubia tekts*/
+                        color: black;
+                        cursor: pointer;
+                    }
+            
+                    .przycisk1:hover {
+                        background-color: grey;
+                        }
+
+                    .przycisk2 {
+                        margin-left: 750px;
+                        width: 125px;
+                        height: 30px;
+                        background-color: rgb(179, 179, 179);
+                        border: 2px solid firebrick;
+                        border-radius: 10px; /*Zaokrągla*/
+                        font-weight: bold; /*Pogrubia tekts*/
+                        color: black;
+                        cursor: pointer;
+                        }
+            
+                    .przycisk2:hover {
+                        background-color: grey;
+                        }
+
     
     
     
@@ -43,5 +79,7 @@
 </head>
 <body>
     
+    <body style="background: url(tlo-szare.JPG);"></body>
+
 </body>
 </html>

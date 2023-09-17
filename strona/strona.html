@@ -8,9 +8,9 @@
 
     <div class="pasek"><div class="txt1"><h1>Historia Kopic</h1></div></div>
 
-    <div class="podstrona1"><a href="html.html">Do strony głównej</a></div>
+    <button class="przycisk1"><a href="html.html">Strona Głowna</a></button>
 
-    <div class="podstrona3"><a href="omnie.html">O Adamie</a></div>
+    <button class="przycisk2"><a href="omnie.html">O Adamie</a></button>
 
 
     <style>
@@ -21,6 +21,7 @@
     	padding-left: 50px;
     	padding-right: 50px;
         background-color: grey;
+        border-radius: 10px;
             }
 
         .txt1 {
@@ -38,6 +39,39 @@
                 font-size: 21px;
                 }
 
+                .przycisk1 {
+                    margin-left: 245px;
+                    margin-top: 5px;
+                    width: 125px;
+                    height: 30px;
+                    background-color: rgb(179, 179, 179);
+                    border: 2px solid firebrick;
+                    border-radius: 10px; /*Zaokrągla*/
+                    font-weight: bold; /*Pogrubia tekts*/
+                    color: black;
+                    cursor: pointer;
+                    }
+            
+                .przycisk1:hover {
+                    background-color: grey;
+                    }
+
+                    .przycisk2 {
+                    margin-left: 750px;
+                    width: 125px;
+                    height: 30px;
+                    background-color: rgb(179, 179, 179);
+                    border: 2px solid firebrick;
+                    border-radius: 10px; /*Zaokrągla*/
+                    font-weight: bold; /*Pogrubia tekts*/
+                    color: black;
+                    cursor: pointer;
+                    }
+            
+                .przycisk2:hover {
+                    background-color: grey;
+                    }
+
     </style>
 
 </head>
@@ -46,11 +80,17 @@
       <div class="txt2">
        Kopice ( do 1945 Köpitz )<br>
       <br>
-       Wieś  Kopice leżyw Gminie Stepnica <br>przy drodze łączącej Stepnicę  z Czarnocinem.<br>
+       Wieś  Kopice leży w Gminie Stepnica <br>przy drodze łączącej Stepnicę  z Czarnocinem.<br>
        Pierwsza wzmianka o wsi pochodzi z roku 1291.</div>
     
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-    <div style="text-align: center;"><img src="mapakopic.jpg"  width="525px" height="250px" title="kopice"></a></div>
+    
+    <div class="obraz" style="text-align: center"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="mapakopic.jpg"  width="525px" height="250px" title="kopice"></a></div>
+
+    <div class="obraz1"><img src="znak.jpg" width="325" height="225 " title="Znak Kopic"></div>
+
+
+
+    <body style="background: url(tlo-szare.JPG);"></body>
 
 </body>
 
@@ -58,12 +98,15 @@
 
         .txt2 {
             text-align: center;
-            margin-top: 50px;
+            margin-top: 25px;
             font-weight: bold;
-            text-shadow: 2px 2px 2px grey;
+            text-shadow: 1px 1px 3px whitesmoke;
+            color: black;
         }
 
-            
+            .obraz1 {
+                
+            }
 
     </style>
 
