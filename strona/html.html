@@ -21,10 +21,6 @@
 
     <div class="pasek"><div class="txt1"><h1>Strona Głowna</h1></div></div>
 
-    <button class="przycisk1"><a href="strona.html">Historia Kopic</a></button>
-
-    <button class="przycisk2"><a href="omnie.html">O Adamie</a></button>
-
 <style>
 
     .pasek {
@@ -34,10 +30,12 @@
 	padding-right: 50px;
     background-color: grey;
     border-radius: 10px;
+    border: 3px solid black;
             }
             
         .txt1 {
         text-align: center;
+        text-shadow: 1px 1px 1px whitesmoke;
         font-size: 25px;
         }
 
@@ -57,12 +55,12 @@
             }
 
             .przycisk1 {
-                    margin-left: 245px;
+                    margin-left: 410px;
                     margin-top: 5px;
                     width: 125px;
                     height: 30px;
                     background-color: rgb(179, 179, 179);
-                    border: 2px solid green;
+                    border: 2px solid black;
                     border-radius: 10px; /*Zaokrągla*/
                     font-weight: bold; /*Pogrubia tekts*/
                     color: black;
@@ -74,11 +72,11 @@
                     }
 
                     .przycisk2 {
-                    margin-left: 750px;
+                    margin-left: 410px;
                     width: 125px;
                     height: 30px;
                     background-color: rgb(179, 179, 179);
-                    border: 2px solid green;
+                    border: 2px solid black;
                     border-radius: 10px; /*Zaokrągla*/
                     font-weight: bold; /*Pogrubia tekts*/
                     color: black;
@@ -97,7 +95,28 @@
 
     <body>
 
+        <div class="obraz">
+            <a href="https://www.google.com/maps/place/Kopice/@53.6893853,14.5491539,13z/data=!4m6!3m5!1s0x47aa703c315fd783:0xdb11be56bc0f3ac9!8m2!3d53.6980202!4d14.5484198!16s%2Fm%2F05p982h!5m1!1e4?entry=ttu">
+                <img src="kopice.jpg" title="Kopice"> <img src="pedał.jpg" title="Pedał">
+        </a>
+    </div>
+
+
+
+    <button class="przycisk1"><a href="strona.html">Historia Kopic</a></button>
+
+    <button class="przycisk2"><a href="omnie.html">O Adamie</a></button>
+
 
 
     </body>
+
+    <style>
+
+        .obraz {
+            margin-top: 30px;
+            margin-left: 220px;
+        }
+
+    </style>
 </html>

@@ -20,10 +20,12 @@
             padding-right: 50px;
             background-color: grey;
             border-radius: 10px;
+            border: 3px solid black;
                 }
     
             .txt1 {
                 text-align: center;
+                text-shadow: 1px 1px 1px whitesmoke;
                 font-size: 25px;
                 }
                 
@@ -44,7 +46,7 @@
                         width: 125px;
                          height: 30px;
                         background-color: rgb(179, 179, 179);
-                        border: 2px solid green;
+                        border: 2px solid black;
                         border-radius: 10px; /*Zaokrągla*/
                         font-weight: bold; /*Pogrubia tekts*/
                         color: black;
@@ -60,7 +62,7 @@
                         width: 125px;
                         height: 30px;
                         background-color: rgb(179, 179, 179);
-                        border: 2px solid green;
+                        border: 2px solid black;
                         border-radius: 10px; /*Zaokrągla*/
                         font-weight: bold; /*Pogrubia tekts*/
                         color: black;
@@ -84,25 +86,27 @@
 
     <form>
         <fieldset>
-            <div class="textformularz"><legend>Formularz Kontaktowy</legend></div>
+            <legend>Formularz Kontaktowy</legend>
                 
-        <div id="text3"><p>Podaj swoją płeć:</p></div>
+        <div class="text1"><p>Podaj swoją płeć:</p></div>
 
+       <div class="formularz1">
         <input type="radio" name="Płeć" value="Kobieta">Kobieta
         <input type="radio" name="Płeć" value="Mężczyzna">Mężczyzna
-        <input type="radio" name="Płeć" value="Helicopter">Helicopter
+        <input type="radio" name="Płeć" value="Helicopter">Helicopter</div>
 
-    <div class="text4"><p>Ile masz lat?</p></div>
+    <div class="text2"><p>Ile masz lat?</p></div>
+       <div class="formularz2"> 
         <input type="radio" name="Wiek" value="mniej niż 15">mniej niż 15<br>
         <input type="radio" name="Wiek" value="15-19">15-19<br>
         <input type="radio" name="Wiek" value="20-29">20-29<br>
         <input type="radio" name="Wiek" value="30-39">30-39<br>
         <input type="radio" name="Wiek" value="40-60">40-60<br>
-        <input type="radio" name="Wiek" value="więcej niż 60">więcej niż 60 
+        <input type="radio" name="Wiek" value="więcej niż 60">więcej niż 60 </div>
 
 
-    <div class="text5"><p>Podaj swój komentarz:</p></div>
-        <textarea name="Komentarz" cols="50" rows="10">Proszę, wpisz tutaj jakiś komentarz...</textarea>
+    <div class="text3"><p>Podaj swój komentarz:</p></div>
+        <textarea name="Komentarz" cols="40" rows="6">Proszę, wpisz tutaj jakiś komentarz...</textarea>
         <br><br>
 
 <input type="submit" value="Wyślij formularz">
@@ -116,21 +120,33 @@
 
 <style>
 
-    .textformularz {
-        
+    .text1 {
+        font-weight: bold;
+    }
+
+    .text2 {
+        font-weight: bold;
     }
 
     .text3 {
         font-weight: bold;
     }
 
-    .text4 {
-        font-weight: bold;
-    }
+        .formularz1 {
+            text-shadow: 1px 1px 1px grey;
+        }
 
-    .text5 {
-        font-weight: bold;
-    }
+        .formularz1:hover {
+            color: whitesmoke;
+        }
+
+        .formularz2 {
+            text-shadow: 1px 1px 1px grey;
+        }
+
+        .formularz2:hover {
+            color: whitesmoke;
+        }
 
 </style>
 </html>
