@@ -83,75 +83,116 @@
     
     <body style="background: url(tlo-szare.JPG);"></body>
 
-    <form>
-                
-        <div class="text1"><p>Podaj swoją płeć:</p></div>
 
-       <div class="formularz1">
-        <input type="radio" name="Płeć" value="Kobieta">Kobieta
-        <input type="radio" name="Płeć" value="Mężczyzna">Mężczyzna
-        <input type="radio" name="Płeć" value="Helicopter">Helicopter</div>
+    <div class="kontakt">
+        <h2>Kontakt z Nami</h2>
+        <form action="#" method="post">
+            <label for="name">Imie:</label>
+            <input type="text" id="imie" name="imie" required>
+      
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+      
+            <label for="subject">Temat:</label>
+            <input type="text" id="temat" name="temat" required>
+      
+            <label for="message">Wiadomość:</label>
+            <textarea id="wiadomosc" name="wiadomosc" rows="4" required></textarea>
+      
+            <button type="submit">Prześlij</button>
+        </form>
+      </div>
 
-    <div class="text2"><p>Ile masz lat?</p></div>
-       <div class="formularz2"> 
-        <input type="radio" name="Wiek" value="mniej niż 15">mniej niż 15<br>
-        <input type="radio" name="Wiek" value="15-19">15-19<br>
-        <input type="radio" name="Wiek" value="20-29">20-29<br>
-        <input type="radio" name="Wiek" value="30-39">30-39<br>
-        <input type="radio" name="Wiek" value="40-60">40-60<br>
-        <input type="radio" name="Wiek" value="więcej niż 60">więcej niż 60 </div>
 
 
-    <div class="text3"><p>Podaj swój komentarz:</p></div>
-        <textarea name="Komentarz" cols="40" rows="6">Proszę, wpisz tutaj jakiś komentarz...</textarea>
-        <br><br>
-
-<input type="submit" value="Wyślij formularz">
-
-<input type="reset" value="Wyczyść dane">
-
-    </form>
 
     <div class="obraz" style="text-align: right;">
+            <a href="https://www.centrumrowerowe.pl/czesci/pedaly-rowerowe/?gclid=EAIaIQobChMIhLuh2rm2gQMVMUKRBR2MyAirEAAYASABEgJHm_D_BwE">
         <img src="pedał.jpg" title="Pedał">     <img src="pedał.jpg" title="Pedał">
-    
+        </a>
     </div>
 
 </body>
 
 <style>
 
-    .text1 {
-        font-weight: bold;
-    }
+.kontakt {
+    float: left;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 50px 20px 50px;
+    background-color: #00000083;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
-    .text2 {
-        font-weight: bold;
-    }
+}
 
-    .text3 {
-        font-weight: bold;
-    }
 
-        .formularz1 {
-            text-shadow: 1px 1px 1px grey;
-        }
+.kontakt h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(252, 255, 216);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
 
-        .formularz1:hover {
-            color: whitesmoke;
-        }
+.kontakt label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: rgb(252, 255, 216);
+}
 
-        .formularz2 {
-            text-shadow: 1px 1px 1px grey;
-        }
+.kontakt input[type="text"],
+.kontakt input[type="email"],
+.kontakt textarea {
+    background-color: rgba(0, 0, 0, 0.527);
+    width: 95%;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    outline: none;
+    border-style:solid;
+    border:none;
+    color: rgb(252, 255, 216);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    
+}
 
-        .formularz2:hover {
-            color: whitesmoke;
-        }
+.kontakt textarea {
+    height: 60px;
+resize: none;
+}
+
+.kontakt button[type="submit"] {
+    background-color: #fff6a3f1;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+
+}
+
+.kontakt button[type="submit"]:hover {
+    background-color: #fffb1f;
+}
 
             .obraz {
                 margin-right: 150PX;
+                text-align: center;
+                transition: 0.3s;
             }
 
+            .obraz:hover{
+                
+                filter: saturate(4);
+            }
 </style>
 </html>
