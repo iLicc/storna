@@ -107,10 +107,17 @@
 
 
     <div class="obraz" style="text-align: right;">
-            <a href="https://www.centrumrowerowe.pl/czesci/pedaly-rowerowe/?gclid=EAIaIQobChMIhLuh2rm2gQMVMUKRBR2MyAirEAAYASABEgJHm_D_BwE">
-        <img src="pedał.jpg" title="Pedał">     <img src="pedał.jpg" title="Pedał">
+             <a href="https://www.centrumrowerowe.pl/czesci/pedaly-rowerowe/?gclid=EAIaIQobChMIhLuh2rm2gQMVMUKRBR2MyAirEAAYASABEgJHm_D_BwE">
+
+             
+                 <img class="obraz3" src="pedał.jpg" width="550px" height="450px" title="Pedał" > 
+                
+                 <img class="obraz4" src="pedał rowerowy.jpg"  width="550px" height="450px" title="pedał-rowerowy" >
+            
         </a>
     </div>
+
+
 
 </body>
 
@@ -186,13 +193,35 @@ resize: none;
 
             .obraz {
                 margin-right: 150PX;
-                text-align: center;
+                display: flex;
                 transition: 0.3s;
+                flex-direction: column;
+                
             }
 
-            .obraz:hover{
-                
-                filter: saturate(4);
+            .obraz3 {
+                border-radius: 10px;
+                max-width: 100%;
+                margin-bottom: 10px;
             }
+
+            .obraz3:hover{
+                opacity: 0;
+                filter: saturate(4);
+        
+            }
+
+            .obraz4 {
+                opacity: 0;
+                z-index: 1; position: absolute;
+                z-index: 2; position: absolute;
+            }
+
+            .obraz4:hover {
+                opacity: 1.0;
+                
+            }
+
+
 </style>
 </html>
